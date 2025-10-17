@@ -1,22 +1,55 @@
-# ResearchConsentFlow.md
+# 03_researcher-data-usage.sol – Documentation
 
-## Purpose
-Enable ethically sound research using anonymized health data — boosting equity in global evidence-based medicine.
+This smart contract governs **researcher access to patient data** under explicit, scope-limited patient consent.
 
-## Key Concepts
-- **Anonymized, tokenized data access**.
-- **Zero-knowledge proofs (ZKPs)** for eligibility criteria.
-- **Opt-in by default; no data scraping.**
+It verifies whether a researcher has been granted access for a specific query scope — and if so, **logs the access attempt** immutably with purpose and metadata.
 
-## Flow
-1. Patient opts in to research data pool.
-2. Researchers submit data query (e.g., looking for post-chemo outcomes in patients aged 60+).
-3. Frankly uses smart contract to validate request, filter consented data only.
-4. Results are delivered as de-identified, tokenized dataset.
-5. Researchers cannot trace data back to individuals.
-6. Patients may revoke participation at any time.
+---
 
-## Safeguards
-- No export of raw identifiable data.
-- All research queries and dataset deliveries are hashed.
-- Researchers can be pre-accredited (via KYC/KYB or DAO governance).
+## 🧠 What This Contract Handles
+
+- Verifies the researcher's role via `AccessControl`
+- Confirms that patient consent exists for the requested query
+- Logs the researcher’s access attempt with:
+  - The query scope (hashed)
+  - The study purpose (human-readable)
+  - An optional metadata pointer (e.g., study ID, IPFS link)
+- Emits a timestamped event for auditability
+
+---
+
+## 🔐 Research Flow
+
+1. A patient grants **consent** to a researcher for a specific study scope
+2. The researcher calls `queryData()` with:
+   - A hash representing the data request
+   - A brief study purpose
+   - Optional metadata (off-chain registry, documents, etc.)
+3. The system checks:
+   - Is this actor a registered researcher for this patient?
+   - Has the patient approved this specific scope?
+4. If permitted, an access event is logged
+
+---
+
+## 📦 Function Reference
+
+| Function | Description |
+|----------|-------------|
+| `queryData(address, bytes32, string, string)` | Logs a researcher’s access attempt if consented |
+
+---
+
+## 🧱 Real-World Analogy
+
+This contract is like a **controlled archive room**:  
+Researchers can’t just browse around — they must present a stamped permission form  
+for a **specific box of records**, and every request is logged in permanent ink.
+
+---
+
+## 📂 Related Files
+
+- `contracts/03_researcher-data-usage.sol` – Solidity source
+- `contracts/01_patient-consent-registry.sol` – Consent logic
+- `contracts/00_actor-role-manager.sol` – Role assignment and permissions
