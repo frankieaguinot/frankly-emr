@@ -1,21 +1,59 @@
-# GovernmentOversightFlow.md
+# 04_government-oversight.sol – Documentation
 
-## Purpose
-Allow public health agencies to monitor safety, access, and supply chain compliance — without compromising privacy.
+This smart contract governs **regulated access by government agencies** to patient health data — under patient-granted, scope-limited consent.
 
-## Key Concepts
-- **Differential privacy** & aggregated reporting.
-- **Regulatory audit trails** for controlled substances.
-- **Decentralized transparency**.
+It ensures that any oversight access is:
+- Explicitly permissioned
+- Scope-restricted
+- Fully logged with purpose and metadata
 
-## Flow
-1. Regulator requests compliance check (e.g., Are Schedule IV prescriptions spiking?).
-2. Frankly aggregates hashed logs of all relevant records.
-3. Smart contracts enforce access scope (aggregate only; no PII).
-4. Insights are delivered (e.g., 28% rise in Class IV scripts in Region 3).
-5. No identifiable patient or provider data is revealed.
+---
 
-## Safeguards
-- Only predefined queries allowed.
-- Access limited to statistical data.
-- Emergency oversight provision requires multisig approval (i.e., multiple authority keys).
+## 🧠 What This Contract Handles
+
+- Verifies government agency roles via `AccessControl`
+- Confirms whether patient consent covers the requested scope
+- Emits an immutable log of access, including:
+  - The scope (as a hash)
+  - The justification (e.g., mandatory reporting)
+  - Metadata (e.g., case ID, warrant link, policy ref)
+  - Timestamp
+
+---
+
+## 🔐 Oversight Flow
+
+1. The patient explicitly grants access to an agency for a specific scope
+2. The agency calls `logOversightAccess()` with:
+   - A `scopeHash` of the permitted domain (e.g., "reportable-diseases-Q2")
+   - A justification string
+   - Optional metadata pointer
+3. The contract checks:
+   - Does the agency have the right role?
+   - Has this scope been permitted by the patient?
+4. If both checks pass, the event is emitted publicly
+
+---
+
+## 📦 Function Reference
+
+| Function | Description |
+|----------|-------------|
+| `logOversightAccess(address, bytes32, string, string)` | Logs a government agency’s access to patient data |
+
+---
+
+## 🧱 Real-World Analogy
+
+This contract is like a **locked drawer of health records**:  
+A government agency can only open it with the patient’s key — and only if they write down *exactly why*, *what they looked at*, and *when*.
+
+No blanket powers. No invisible logs. Only transparency.
+
+---
+
+## 📂 Related Files
+
+- `contracts/04_government-oversight.sol` – Solidity source
+- `contracts/01_patient-consent-registry.sol` – Consent scope logic
+- `contracts/00_actor-role-manager.sol` – Role-based access assignment
