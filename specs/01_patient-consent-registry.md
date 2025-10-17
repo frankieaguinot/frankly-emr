@@ -11,21 +11,20 @@ Patients explicitly decide which providers can access their records, and consent
 - Patient self-managed access permissions
 - Consent grant and revocation per provider
 - Scope-based control using hashed descriptors
-- Provider and patient registration via owner
-- Real-time access checks using `hasAccess()`
+- Real-time access checks using `isPermitted()`
+- Metadata pointers for off-chain context (e.g. JSON, IPFS)
 
 ---
 
 ## 🔐 Consent Flow
 
-1. **Patient is registered** by the system owner
-2. **Provider is registered** by the system owner
-3. **Patient grants consent** to a specific provider, including:
+1. **Patient uses their wallet** to grant access
+2. **Consent includes**:
    - A `scopeHash` (e.g., hash of "lab results from Jan–Mar 2023")
    - Optional metadata link (JSON, IPFS, etc.)
-4. **Provider can access** data while consent is valid
-5. **Patient can revoke** consent at any time
-6. **All actions emit events** for auditability
+3. **Provider can access** data if scope matches and consent is active
+4. **Patient can revoke** consent at any time
+5. **All actions emit events** for traceable audit logs
 
 ---
 
@@ -33,11 +32,10 @@ Patients explicitly decide which providers can access their records, and consent
 
 | Function | Description |
 |----------|-------------|
-| `registerPatient(address)` | Owner adds a patient |
-| `registerProvider(address)` | Owner adds a provider |
-| `grantConsent(address, bytes32, string)` | Patient grants access to a provider |
-| `revokeConsent(address)` | Patient revokes previously granted access |
-| `hasAccess(address, address, bytes32)` | Check if a provider currently has access for a given scope |
+| `grantConsent(address grantee, bytes32 scopeHash, string metadata)` | Patient grants access to a provider |
+| `revokeConsent(address grantee)` | Patient revokes previously granted access |
+| `getConsent(address patient, address grantee)` | Returns the full consent record |
+| `isPermitted(address patient, address grantee, bytes32 scopeHash)` | Checks if access is currently permitted |
 
 ---
 
@@ -52,4 +50,4 @@ and can shred it at will — *while the system logs everything in ink.*
 ## 🗃 Related Files
 
 - `contracts/01_patient-consent-registry.sol` – Solidity source
-- `contracts/00_actor-role-manager.sol` – Actor roles (who’s a provider, etc.)
+- `contracts/00_actor-role-manager.sol` – Role management and registration
