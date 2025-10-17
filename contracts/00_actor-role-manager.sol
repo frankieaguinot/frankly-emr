@@ -1,62 +1,43 @@
 // SPDX-License-Identifier: CC-BY-NC-4.0
 pragma solidity ^0.8.0;
 
-/// @title AccessControl for Frankly EMR
-/// @notice Manages role-based access and consent permissions in a trustless environment.
+/// @title ActorRoleManager
+/// @notice Assigns and verifies roles (e.g., Physician, Researcher, Admin) in the Frankly EMR system
 
-contract AccessControlFrankly {
+contract ActorRoleManager {
+    enum Role { NONE, PHYSICIAN, RESEARCHER, ADMIN, AUDITOR }
+
+    mapping(address => Role) public roles;
     address public owner;
 
-    mapping(address => bool) private patients;
-    mapping(address => bool) private providers;
-    mapping(address => mapping(address => bool)) private accessPermissions;
+    event RoleGranted(address indexed actor, Role role);
+    event RoleRevoked(address indexed actor, Role role);
 
-    event PatientRegistered(address indexed patient);
-    event ProviderRegistered(address indexed provider);
-    event AccessGranted(address indexed patient, address indexed provider);
-    event AccessRevoked(address indexed patient, address indexed provider);
+    modifier onlyOwner() {
+        require(msg.sender == owner, "Not authorized");
+        _;
+    }
 
     constructor() {
         owner = msg.sender;
     }
 
-    modifier onlyOwner() {
-        require(msg.sender == owner, "Not contract owner");
-        _;
+    function grantRole(address actor, Role role) external onlyOwner {
+        require(role != Role.NONE, "Invalid role");
+        roles[actor] = role;
+        emit RoleGranted(actor, role);
     }
 
-    modifier onlyPatient() {
-        require(patients[msg.sender], "Not a registered patient");
-        _;
+    function revokeRole(address actor) external onlyOwner {
+        emit RoleRevoked(actor, roles[actor]);
+        roles[actor] = Role.NONE;
     }
 
-    modifier onlyProvider() {
-        require(providers[msg.sender], "Not a registered provider");
-        _;
+    function hasRole(address actor, Role expectedRole) external view returns (bool) {
+        return roles[actor] == expectedRole;
     }
 
-    function registerPatient(address _patient) public onlyOwner {
-        patients[_patient] = true;
-        emit PatientRegistered(_patient);
-    }
-
-    function registerProvider(address _provider) public onlyOwner {
-        providers[_provider] = true;
-        emit ProviderRegistered(_provider);
-    }
-
-    function grantAccess(address _provider) public onlyPatient {
-        require(providers[_provider], "Provider not registered");
-        accessPermissions[msg.sender][_provider] = true;
-        emit AccessGranted(msg.sender, _provider);
-    }
-
-    function revokeAccess(address _provider) public onlyPatient {
-        accessPermissions[msg.sender][_provider] = false;
-        emit AccessRevoked(msg.sender, _provider);
-    }
-
-    function hasAccess(address _patient, address _provider) public view returns (bool) {
-        return accessPermissions[_patient][_provider];
+    function transferOwnership(address newOwner) external onlyOwner {
+        owner = newOwner;
     }
 }
