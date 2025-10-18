@@ -1,82 +1,95 @@
-# Frankly EMR: System Architecture Overview
+# Frankly EMR – System Architecture Overview
 
-## 🔧 Architectural Philosophy
-Frankly is designed as a modular, interoperable system anchored by **blockchain-based auditability**, **patient-controlled access**, and **end-to-end lifecycle transparency**. It is engineered to be adaptable — governments, clinics, researchers, and individuals can deploy only what they need.
+Frankly EMR is a modular, blockchain-based health data system designed to restore **data sovereignty**, enforce **consent-first access**, and build **verifiable audit trails** across the full lifecycle of patient care — from intake to post-treatment reporting.
 
-This document outlines the system architecture with components grouped by purpose.
-
----
-
-## 🏗️ Core Architecture
-
-### 1. **Blockchain Layer (Audit + Provenance)**
-- **Platform**: Permissioned Blockchain (e.g. Hyperledger Fabric or Polygon PoS)
-- **Data Type Stored**: Immutable hashes + access logs, not raw medical data
-- **Smart Contracts**:
-  - AccessControl.sol (governs data permissions)
-  - ConsentRegistry.sol (records patient opt-ins/opt-outs)
-- **Audit Trail**: Every access/write attempt generates a verifiable hash
-
-### 2. **Data Storage Layer (Off-Chain)**
-- **Patient Records**: FHIR-compliant JSON documents
-- **Encryption**: AES-256 for data-at-rest, TLS for data-in-transit
-- **Location**: Decentralized file storage (IPFS/Filecoin) or encrypted cloud storage
-
-### 3. **Access Control Engine**
-- **Private Key System**: Patients hold private keys for their own data
-- **Roles**: Patients, Providers, Researchers, Government Auditors
-- **Logic**: Defined by AccessControl.sol smart contract
-
-### 4. **APIs and Interoperability**
-- **FHIR + HL7 compatible** REST APIs
-- **Decentralized Identity (DID)** support for cross-system authentication
-- **Oracles** to ingest lab results, government databases, or clinical trial metadata
+This document outlines the smart contract structure, role architecture, and consent mechanics that govern the system.
 
 ---
 
-## 👥 User Interface Layers
+## 🧱 Core Design Principles
 
-### 1. **Physician Portal**
-- Patient search with consent-based access
-- Full audit trail visibility
-- Smart filters for comorbidities, prescriptions, and contraindications
-
-### 2. **Patient App**
-- Timeline view of all interactions (like a blockchain explorer for their health)
-- Grant/revoke access to doctors, researchers
-- Upload own data (journals, wearables)
-
-### 3. **Researcher Portal**
-- Request anonymized cohort access
-- View ZK-proven summary stats before applying
-- Export de-identified datasets based on scope of permission
-
-### 4. **Regulatory Dashboard**
-- Real-time de-identified monitoring (usage trends, access violations)
-- No direct data access — built on ZK proofs + access logs only
+| Principle | Description |
+|----------|-------------|
+| **Patient-Centric Control** | Patients are the *primary actors* and own their data cryptographically |
+| **Scope-Based Consent** | Access is defined by hashed descriptors (e.g., data type + time range) |
+| **Auditability by Default** | All actions emit events to an immutable ledger |
+| **No Default Trust** | All permissions must be granted, revocable, and transparent |
+| **Ethical Fencing** | Roles must be scoped, temporary, and well-justified |
 
 ---
 
-## 🧠 AI and Automation Layer
-- **Triage Engine**: NLP-powered symptom checker that routes urgency (can be LGU-deployed)
-- **Compliance Monitor**: AI-assisted flagging of outlier access or inappropriate use
-- **Redundancy Plan**: Human-in-the-loop escalation for edge cases
+## 📦 Smart Contract Modules
+
+| Contract File | Purpose | Folder |
+|---------------|---------|--------|
+| `00_actor-role-manager.sol` | Assigns and verifies actor roles like patients, providers, agencies | `contracts/` |
+| `01_patient-consent-registry.sol` | Stores granular consent records and permission states | `contracts/` |
+| `02_researcher-access-log.sol` | Enables researchers to log access events with scope + metadata | `contracts/` |
+| `03_physician-interaction-log.sol` | Allows providers to log treatment-related interactions | `contracts/` |
+| `04_government-oversight.sol` | Enables agencies to log access for oversight, if permitted | `contracts/` |
+
+Each is paired with a detailed `.md` file in `specs/`, documenting its structure, purpose, and real-world analogy.
 
 ---
 
-## 🔐 Security & Ethics
-- **Zero-Knowledge Proofs (ZKPs)**: Used to validate research queries without exposing raw data
-- **Consent Architecture**: Built-in at every touchpoint
-- **Digital Sovereignty**: Patient data never monetized, mined, or sold
+## 🔐 Consent + Scope Logic
+
+Frankly uses a **hash-based consent system**:
+- Consent is **not a boolean**; it includes:
+  - Actor identity
+  - `scopeHash`: a hash of the access window, data fields, and purpose
+  - Metadata: optional off-chain link (IPFS, JSON pointer, etc.)
+- Consent is always:
+  - **Granted by patient**
+  - **Revocable**
+  - **Version-controlled**
+  - **Auditable on-chain**
 
 ---
 
-## 🌀 Deployment Options
-- Local Government Units (LGU)
-- Hospital Networks
-- NGOs + Researchers
-- Personal EMR for individuals
+## 🧭 Custom Role Design
+
+See [`05_custom-role-permission-map.md`](./05_custom-role-permission-map.md) for a guide to defining institution-specific roles (e.g. billing, HR, legal) with scoped access.
+
+All roles must:
+- Be mapped to specific functions
+- Justify why access is needed
+- Be designed for revocability and transparency
 
 ---
 
-This architecture intentionally overbuilds so adopters can customize their level of granularity, transparency, and compliance — from rural clinics to international research collaborations.
+## ⚙️ External Integration
+
+Frankly assumes integration with:
+- **Off-chain data storage systems** (e.g., S3, IPFS, institutional databases)
+- **Patient-facing apps** (wallets, dashboards)
+- **Regulatory API layers** (reporting, compliance bridges)
+
+Contracts do not store raw data — only hashed consent metadata and logs.
+
+---
+
+## 🧾 System Guarantees
+
+| Action | Guarantee |
+|--------|-----------|
+| Provider access | Patient has granted matching consent hash |
+| Research data use | Logged with scope, metadata, and timestamp |
+| Government audit | Logged transparently if consented |
+| Patient revokes | Contract enforces access change immediately |
+| Admin defines new role | Must pass checklist from `05_custom-role-permission-map.md` |
+
+---
+
+## 🗃 Related Docs
+
+- `specs/01_patient-consent-registry.md` – Consent structure + flow
+- `specs/05_custom-role-permission-map.md` – How to design new roles ethically
+- `contracts/` – Solidity smart contract implementations
+
+---
+
+## 🧠 Final Thought
+
+Frankly doesn’t just store health records — it **encodes accountability**.  
+Every action is a signature. Every access is a story. Every permission is earned, not assumed.
