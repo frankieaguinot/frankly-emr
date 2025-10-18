@@ -1,54 +1,78 @@
 # 00_actor-role-manager.sol – Documentation
 
-This smart contract defines the **roles and permissions** system for Frankly EMR.
+This smart contract governs **role-based access control** for Frankly EMR.
 
-It ensures that only **recognized actors** — such as physicians, researchers, administrators, or auditors — can participate in the ecosystem. This is not patient consent (that’s handled separately); this is **role-based system access**.
+It is the **gatekeeper** — ensuring that only authorized parties can view, modify, or interact with patient-linked data. Every permission event is transparently logged on-chain for **auditability** and **traceability**.
 
 ---
 
 ## 🔐 Purpose
 
-The `actor-role-manager` contract allows us to:
+The Actor Role Manager contract allows us to:
+- Assign system roles like `Patient`, `Provider`, and `Admin`
+- Grant or revoke access to individual actors
+- Enforce access via modifiers in other smart contracts
+- Emit event logs for every permission change
 
-- Assign system-level roles like `Physician`, `Researcher`, `Regulator`, `Admin`
-- Manage who has authority to access, contribute, or validate medical records
-- Log role changes and permission grants on-chain
-- Support modular authorization without bottlenecks or overreach
+This design is **decentralized but verifiable**, maintaining patient sovereignty while supporting real-world oversight.
 
 ---
 
 ## 🧠 Why This Matters
 
-Frankly EMR is built as a **consent-led system**, but consent means nothing if the people receiving it are anonymous or unauthorized.
+Frankly is designed for **lifespan-long traceability** and **consent-driven access**, which means we need to:
+- Track *who* is trying to access data
+- Verify *if* they’re allowed to
+- Record *when* that permission was granted or revoked
 
-This contract:
-- Defines the **known actors** within the ecosystem
-- Provides a **public registry** of who has which system-level role
-- Allows for trustable, inspectable permissions architecture
+Unlike legacy EMRs, Frankly **decouples identity from institutions** — actors are assigned roles using DIDs (Decentralized Identifiers), which allows for portable access control.
+
+This means:
+- A doctor who practices in multiple hospitals can retain access across all
+- A patient can receive care from multiple clinics without fragmented records
+- Roles are defined by relationship, not employment
 
 ---
 
-## 🧩 Key Functions (Examples)
+## 🧱 Key Functions
 
 | Function | Description |
 |----------|-------------|
-| `grantRole()` | Assigns a system role (e.g. Physician) to a wallet |
-| `revokeRole()` | Removes a role from a wallet |
-| `hasRole()` | Checks if an address currently has a role |
-| Event Logs | Emits events for every role grant or removal, creating an audit trail |
+| `registerPatient(address)` | Admin assigns a `Patient` role |
+| `registerProvider(address)` | Admin assigns a `Provider` role |
+| `grantAccess(address)` | Patient grants access to a provider |
+| `revokeAccess(address)` | Patient revokes access from a provider |
+| `hasAccess(address, address)` | View current permission status |
+
+Each action emits an event that is **immortalized via blockchain hash** — forming the audit trail for access control.
 
 ---
 
 ## 🧱 Real-World Analogy
 
-Think of this as a **staff badge printer** and **access gatekeeper**.
+Think of this as a **keycard management system**.  
+Hospitals don’t just let anyone into the ICU — access is granted based on *roles*, and *logged* every time the door opens.
 
-Patients still control who accesses their data — but this contract decides who is even allowed to *ask* for that access in the first place.
+Frankly just makes the keycards digital, cryptographic, and globally portable.
+
+---
+
+## 🌐 Identity Across Institutions
+
+This contract assumes that actors are **not tied to a single hospital or system**.  
+They’re tracked by DID, not by employee number.
+
+This reflects real-world environments like the Philippines, where:
+- Physicians often practice in multiple hospitals
+- Patients may bounce between clinics and provinces
+- There’s no unified national EMR — yet
+
+Frankly enables **unified access regardless of institution**, with patients maintaining full oversight.
 
 ---
 
 ## 📦 Related Files
 
-- `contracts/00_actor-role-manager.sol` – Smart contract that defines the role logic
-- `contracts/01_patient-consent-registry.sol` – Patient-granted data access
-- `README.md` – Project overview
+- `contracts/00_actor-role-manager.sol` – Solidity source
+- `contracts/01_patient-consent-registry.sol` – Consent logic built atop roles
+- `data-schema.md` – Field structure, hashing, and DID usage
