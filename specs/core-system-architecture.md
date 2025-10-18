@@ -10,7 +10,7 @@ This document outlines the **technical backbone** of Frankly — a blockchain-ba
 |-------|-------------|
 | **Frontend** | Physician & patient portal UI (web or app) |
 | **Application Layer** | Business logic handling interactions between frontend and smart contracts |
-| **Smart Contracts** | Role-based access, data registry, audit logging |
+| **Smart Contracts** | Modular role and consent governance:<br>• Actor role manager<br>• Patient consent registry<br>• Researcher usage logs<br>• Physician interaction records<br>• Government audit ledger |
 | **Blockchain Layer** | Immutable ledger (e.g., Ethereum, Polygon, etc.) |
 | **Off-chain Storage** | IPFS or encrypted cloud storage for bulky files (e.g., scans, images) |
 | **Oracles** | Bridge between real-world data (lab results, insurance verification) and blockchain |
@@ -23,7 +23,11 @@ This document outlines the **technical backbone** of Frankly — a blockchain-ba
 2. **Physician requests access** to patient records via smart contract.
 3. **Patient grants or denies** access through an interface.
 4. **If granted**, physician sees on-chain references and off-chain data pointers.
-5. **Any access or modification** triggers an event — creating a hash and recording it immutably.
+5. **Any access, interaction, or query**:
+   - Triggers an event
+   - Is scoped by hash
+   - Is recorded immutably on-chain
+6. **Researchers and agencies** operate under scoped, logged access with patient-governed constraints.
 
 ---
 
@@ -40,11 +44,12 @@ Due to size limitations on-chain, Frankly uses a **hybrid architecture**:
   - Genomic files
   - Lab results
 
-Files are referenced by their hash — proving they haven’t been tampered with.
+Files are referenced by their hash — proving they haven’t been tampered with.  
+Consent scope itself is hashed, allowing on-chain validation without exposing raw intent.
 
 ---
 
-## 🔍 Example Use Case: Consent Flow
+## 🧪 Example: Consent-Based Data Access
 
 1. Dr. Reyes wants to review Maria’s PET scan.
 2. Dr. Reyes submits a smart contract request.
@@ -62,6 +67,7 @@ Frankly was intentionally **overbuilt** to support multiple use cases:
 - **Pharma-to-patient compliance tracking**
 - **Clinical trials + supply chain audit**
 - **Cross-border patient care**
+- **Custom role-mapping framework for institution-specific actors (e.g. HR, billing)**
 
 The repo is modular — adopters can strip it down to fit small clinics or scale it for national health systems.
 
