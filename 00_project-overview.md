@@ -1,66 +1,59 @@
-# 🧭 Project Overview – Frankly EMR
+# Frankly EMR – Project Overview
 
-Frankly EMR is a decentralized, consent-driven electronic medical records (EMR) system that puts **patients at the center** of their health data.
+**Frankly EMR** is a blockchain-based electronic medical record (EMR) system designed for **consent-first architecture**, **traceable access logs**, and **global data portability**.
 
-It leverages blockchain technology to enforce **cryptographic access control**, enable **auditable data flows**, and ensure **portability across institutions** — without compromising privacy.
-
----
-
-## 🎯 Purpose
-
-Modern EMRs often silo data within institutions, hiding access logs and giving patients little control. Frankly was designed to:
-
-- **Restore patient sovereignty**
-- **Enable ethical oversight** without overreach
-- **Standardize data** for research and cross-border care
-- **Prove accountability** via immutable logs
+It was created by [Frankie Aguinot, MD](https://github.com/frankieaguinot) — a physician-engineer building for both doctors and developers.
 
 ---
 
-## 🧱 What Makes Frankly Different
+## 🧠 Purpose
 
-| Feature | Description |
-|--------|-------------|
-| Consent-First Design | No access is allowed unless explicitly granted by the patient |
-| Modular Smart Contracts | Granular roles and responsibilities, coded into the system |
-| DID-based Identity | Supports global use without relying on national IDs |
-| Verifiable Audit Trails | Every access or change is publicly logged and timestamped |
-| Hybrid Storage | Data pointers live on-chain; heavy files stay off-chain (e.g., IPFS) |
-| Built for Extension | Can scale from small clinics to national health systems |
+Frankly isn’t just another health tech project. It’s a rethinking of data sovereignty, placing patients at the center of access control — not institutions.  
+By encoding trust and transparency into the architecture itself, Frankly aims to restore ethical control over health data.
 
 ---
 
-## 🏥 Target Users
+## 👥 Audience
 
-- **Physicians** – View patient records across facilities with patient consent  
-- **Researchers** – Request scoped, auditable access for ethical data analysis  
-- **Patients** – Own and manage their data via wallet-based interfaces  
-- **Governments** – View aggregate data (if permitted) for health policy and oversight
+This repo serves two audiences:
 
----
-
-## 🔗 Repo Structure
-
-| Folder | Purpose |
-|--------|---------|
-| `contracts/` | Solidity smart contracts governing access and data events |
-| `specs/`     | Technical documentation + system architecture |
-| `images/`    | (Optional) Diagrams, charts, etc. |
-| `README.md` | Main orientation for developers |
-| `00_project-overview.md` | Vision, value, and architecture summary |
+- **Health professionals** looking to understand how Frankly EMR protects patients and simplifies workflows  
+- **Developers and technologists** exploring smart contract implementations, access logic, and system design
 
 ---
 
-## 🌍 Portability by Design
+## 🧱 Architecture Overview
 
-Frankly works **across hospitals**, **across regions**, and **across use cases** — from chronic care to public health analytics.
+Frankly uses a **modular smart contract** system for:
 
-All you need is a browser and consent.
+- Role management
+- Consent handling
+- Researcher access
+- Government oversight
+
+Every access attempt emits a **hash-based event**, creating an auditable trail that can't be altered or hidden.
 
 ---
 
-## 🧠 Learn More
+## 📦 What’s Inside
 
-- [Consent Registry Spec](specs/01_patient-consent-registry.md)
-- [System Architecture](specs/06_system-governance-architecture.md)
-- [Data Schema](specs/data-schema.md)
+| Folder | Contents |
+|--------|----------|
+| `contracts/` | Solidity smart contracts governing access and logging |
+| `specs/` | Markdown docs describing the structure and function of each `.sol` file |
+| `docs/` | System architecture, lifecycle tracking, and technical strategy |
+| `README.md` | Entry point to the project |
+| `00_project-overview.md` | This file – high-level context for contributors and stakeholders |
+
+---
+
+## ✨ Why This Matters
+
+Frankly EMR supports:
+
+- Cross-border data sharing
+- Modular role creation (e.g., for HR, research, or pharmacy)
+- Zero-trust access logging
+- Sovereign identifiers for patients via DID
+
+This is a foundation for national health systems, clinical trials, small clinics, or startups — built by someone who’s actually stood on both sides of the chart.
