@@ -1,45 +1,76 @@
 # Lifecycle Tracking Map – Frankly EMR
 
-This document outlines the **end-to-end lifecycle structure** of the Frankly EMR system.
-
-The design accounts for every stage of the pharmaceutical and clinical record chain, from sourcing raw materials to documenting excretion-related lab data.
-
-## Stages of Lifecycle Tracking
-
-1. **Raw Material Procurement**
-   - Source identification, quality certifications
-   - Hash generated at intake
-   - DID-linked supplier signature
-
-2. **Manufacturing & Packaging**
-   - Batch tracking, timestamped environmental logs
-   - Smart contract logs material-to-lot mapping
-   - QA events hashed to block
-
-3. **Supply Chain & Shipping**
-   - Cold-chain compliance and handoff signatures
-   - Chain-of-custody maintained via decentralized ledger
-
-4. **Prescription & Dispensation**
-   - Script logged with encrypted metadata
-   - Pharmacist validation and dose matching via smart contract
-
-5. **Clinical Use, Monitoring & Lab Testing**
-   - Use logs, side-effect reporting, adherence tracking
-   - Optional integration with AI pattern recognition
-   - Results hashed, linked to treatment node
-
-6. **Excretion & Downstream Monitoring**
-   - Lab results tied to end-of-life tracking
-   - Flag patterns indicating renal burden or off-target metabolism
+Frankly EMR tracks the **entire lifecycle of high-scrutiny medications and clinical interventions** — from raw material sourcing to patient outcomes and waste disposal. It uses blockchain hashes and AI-driven anomaly detection to ensure **traceability, accountability, and real-world oversight**.
 
 ---
 
-## Technical Notes
+## 🔁 Lifecycle Phases
 
-- Each stage generates a **hash** to log the event immutably.
-- Consent and access are managed through **smart contracts**.
-- Patients hold their **private keys**, granting explicit access to providers.
-- **Audit trails** are available per entry to ensure traceability and transparency.
+### 1. Raw Material Procurement
+- Supplier identity verified via Decentralized ID (DID)
+- Source certifications logged
+- Intake batch ID and composition hashed on-chain
+- AI may check supplier risk profile
 
-This full cycle ensures ethical accountability, precision treatment, and the highest standard of trustless verification in patient health data.
+### 2. Manufacturing & Packaging
+- Batch-to-lot mapping recorded
+- Time-stamped logs: temperature, humidity, QA checkpoints
+- Dosage form recorded (e.g., pill, injectable, liquid)
+- Hashes created for each sub-batch + signed by manufacturer DID
+
+### 3. Supply Chain & Shipping
+- Chain-of-custody documented
+- GPS, cold-chain compliance, handoff hashes
+- Smart contracts record custody transfer with timestamped logs
+- Packaging unit may contain hash-accessible QR/NFC for scanning
+
+### 4. Prescription & Dispensation
+- Physician scripts medicine to patient DID
+- Quantity, dosage, instructions logged on-chain
+- Pharmacist verifies dose, dispenses with hash
+- Pill-level or mg-level granularity tracked
+
+### 5. Clinical Use, Monitoring & Lab Testing
+- Patient intake acknowledged (manual or via device)
+- AI flags discrepancies (e.g., more meds consumed than prescribed)
+- Side effects logged via patient or clinician
+- Compliance verified through lab testing or smart device
+- Optional metadata includes diagnostic context or care notes
+
+### 6. Excretion & Downstream Monitoring
+- Renal/hepatic burden labs (e.g., GFR, LFTs) logged
+- Metabolite presence tracked to confirm compliance
+- Environmental release protocols (for investigational/nuclear drugs)
+- Waste logging optional but hash-linked to earlier batch chain
+
+### 7. Oversight, Alerts & Audit
+- Researchers or government bodies can access mg-level logs
+- Consent required for each audit
+- AI proactively flags early refills, underuse, overuse
+- Real-time alerting possible (e.g., overdose risk, toxic side effects)
+- Logs are patient-specific and cryptographically verifiable
+
+---
+
+## 📊 Lifecycle Flow Diagram (Text-Based)
+
+```plaintext
+[Raw Material Procurement]
+        |
+        v
+[Manufacturing & Packaging]
+        |
+        v
+[Supply Chain & Shipping]
+        |
+        v
+[Prescription & Dispensation]
+        |
+        v
+[Clinical Use & Monitoring]
+        |
+        v
+[Excretion & Downstream Monitoring]
+        |
+        v
+[Oversight / AI Alerts / Audits]
