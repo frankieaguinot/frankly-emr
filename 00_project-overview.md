@@ -1,99 +1,103 @@
 # 00_project-overview.md
 
-Frankly EMR – Project Overview
-==============================
+# Frankly EMR – Project Overview
 
-> The **AI-powered user interface (UI)** is the linchpin that bridges complex blockchain technology with the clinician’s need for **simplicity**, **efficiency**, and **speed**.
+Frankly EMR is a blockchain-powered medical record and traceability platform designed to be the **gold standard** in patient data control, lifecycle accountability, and clinical usability.
 
-Frankly EMR was built with one goal: **make advanced tech usable for real people in high-pressure clinical settings.** It was designed by a physician who understood firsthand that no matter how powerful the backend is, if it's frustrating or confusing to use — it won't be used.
-
----
-
-## 🎯 Why Frankly?
-
-- Healthcare workers are overwhelmed.
-- Medical software is bloated and counterintuitive.
-- Blockchain solutions are often impractical or inaccessible to non-technical users.
-
-Frankly EMR addresses all three by combining:
-- **Consent-based blockchain architecture** (for traceability, control, and auditability)
-- **AI-driven UI** (for minimal training and maximum usability)
-- **Modular open-source design** (for adaptation at any scale)
+It was built by a physician for clinicians, researchers, developers — and the governments that must regulate it all.
 
 ---
 
-## 🧠 AI as the Interface
+## 🧠 Why Frankly?
 
-"AI" in Frankly isn’t just for diagnostics — it *is the user interface*.
+At its core, Frankly asks:  
+**"What would an EMR look like if we designed it to be ethical, patient-first, and globally accountable — from day one?"**
 
-- The system **guides the user** proactively.
-- It pulls **relevant patient data** based on context (e.g., recent labs, old imaging).
-- It can auto-generate **summaries, visuals, or flags** without being prompted.
-- It’s like a **PA in a box** — always available, never tired.
-
-The **gold standard** we aimed for:  
-> A clinician should only need to click the portal link — the EMR will handle the rest.
-
-This isn’t just good UX — it’s **ethical tech design**.  
-We believe usability is not a nice-to-have; it’s a *clinical imperative*.
+The answer is:
+- Patient-owned health data
+- Scope-limited consent built into the ledger
+- Real-time traceability of every pill, log, or scan
+- Smart contracts that enforce permissions, not just record them
 
 ---
 
-## 🧱 Core Architecture
+## 🤖 AI as the UI: Compassion Through Design
 
-| Layer | Description |
-|-------|-------------|
-| Frontend | AI-driven clinician and patient UI |
-| Application Layer | Business logic and routing |
-| Smart Contracts | Role-based access, consent, audit logs |
-| Blockchain Layer | Immutable ledger (Ethereum, Polygon, etc.) |
-| Off-chain Storage | IPFS / encrypted cloud for bulky files |
-| Oracles | Connect real-world events with on-chain data |
+The **linchpin** of Frankly’s usability is its **AI-powered user interface (UI)**.  
+Built for **clinicians, not coders**, the gold standard is this:
 
----
+> “The only thing a doctor should have to do is open the portal. The system takes it from there.”
 
-## 💡 Key Features
+The AI guides the user:
+- Pulls up relevant records automatically (labs, scans, summaries)
+- Creates charts and cross-patient trends on demand
+- Flags potential safety issues
+- Surfaces missing data before the user even knows it’s missing
 
-- Role-based access control (`00_actor-role-manager.sol`)
-- Patient-governed consent (`01_patient-consent-registry.sol`)
-- Physician and researcher access logging
-- Government oversight controls with auditability
-- Fully hashed metadata and event trails
-- Modular role expansion via `05_custom-role-permission-map.md`
+The interface behaves like a **PA in a box**, restoring **time, focus, and humanity** to clinical care.
 
 ---
 
-## 📦 Repo Structure
+## 📦 What Makes It Different?
 
-- `contracts/` – Solidity smart contracts
-- `specs/` – Markdown specs for each smart contract
-- `docs/` – System overviews and technical documentation
-- `README.md` – Technical deep dive
-- `clinician-overview.md` – Plain-language introduction for healthcare users
+Frankly wasn’t just built to chart data — it was built to **track and prove what happened**. It accounts for:
 
----
-
-## 🌍 Use Cases
-
-- National decentralized health records
-- Transparent clinical trial tracking
-- Global patient-owned record systems
-- High-trust pharma supply auditing
+- Who accessed what data
+- With what consent
+- For what purpose
+- Linked to what external document or event
+- Across time and actors
 
 ---
 
-## 🔓 Built to Be Forked
+## 🧬 Full Lifecycle Traceability (Yes, Down to the Milligram)
 
-Frankly is **overbuilt on purpose** — so you can strip it down or scale it up.
+Frankly enables **complete end-to-end product tracking**, covering:
 
-Use it as:
-- A skeleton for healthtech startups
-- A reference for public health infrastructure
-- A sandbox for ethical blockchain design
+1. Raw material sourcing
+2. Manufacturing + packaging
+3. Supply chain + cold chain compliance
+4. Dispensation to the patient
+5. Clinical use and follow-up labs
+6. Medication leftover tracking
+7. Downstream excretion (when needed)
+
+It can even **reconcile doses** based on dispensing, clinical use, and timing — ensuring that **every mg is accounted for**.
+
+This gives regulators, clinical researchers, and governments a **verifiable trail** from **origin to outcome**.
 
 ---
 
-## 🧠 Final Thought
+## 🔍 Who Is It For?
 
-This isn’t just software.  
-This is what it looks like when technologists and clinicians collaborate to put **human needs first** — without compromising on power, privacy, or precision.
+- **Clinicians** – to regain time and restore patient focus
+- **Researchers** – to log permissioned queries and findings
+- **Government agencies** – to fulfill oversight without overreach
+- **Pharma & healthtech builders** – to adopt traceable compliance by design
+- **Patients** – to finally own and control their health data, globally
+
+---
+
+## 🔐 Licensing
+
+Frankly is released under a **Creative Commons Attribution-NonCommercial 4.0** license (CC BY-NC 4.0).
+
+Commercial use requires written permission, especially for:
+- Paywalls to access personal health data
+- Proprietary audit-opaque infrastructure
+- Deployments by revenue-generating platforms
+
+We believe in protecting patients — from corporations *and* from opacity.
+
+---
+
+## 🧾 Final Word
+
+Frankly isn't just a medical record —  
+It's a **design philosophy for compassionate systems**.
+
+- Overbuilt for resilience  
+- Transparent by default  
+- Usable by everyone — from village clinic to national agency
+
+It proves that ethics, usability, and accountability are **not trade-offs** — they're the **gold standard** we should all strive for.
