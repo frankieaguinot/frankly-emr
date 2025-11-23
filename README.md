@@ -89,12 +89,11 @@ The **gold standard** we strived for:
 
 ## 🧾 Attribution
 
-Built by [Frankie Aguinot, MD](https://www.linkedin.com/in/frankieaguinotmd/) —  
-physician, use-case strategist, and systems designer  
-specializing in **digital sovereignty**, **ethical auditability**, and **compassionate technology**.
+Built by [Frankie Aguinot, MD](https://www.linkedin.com/in/frankieaguinotmd/) —  physician, use-case strategist, and systems designer specializing in **digital sovereignty**, **ethical auditability**, and **compassionate technology**.
 
 ---
 
 ## 🔗 License
 
-This work is licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
+This work is licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/). © 2025 Frankie Aguinot, MD.  
+This repository, Frankly EMR, was originally conceived, authored, and published by Frankie Aguinot, MD.  The source materials, including design architecture, smart contract specifications, and documentation, represent original intellectual property.  This work is licensed under CC BY-NC 4.0 and may not be used for commercial purposes without explicit written consent from the author.
