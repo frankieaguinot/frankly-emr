@@ -57,6 +57,6 @@ Frankly EMR was built to give you time back, to bring the focus back to care, no
 
 Because great tech shouldn’t demand more of us. It should make it easier to do what we do best.
 
-⸻
+---
 
-Authored by Frankie Aguinot, MD
+© 2025 Frankie Aguinot, MD. All rights reserved under CC BY-NC 4.0.
