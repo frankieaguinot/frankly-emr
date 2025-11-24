@@ -1,10 +1,14 @@
 # Frankly EMR: A Gold Standard in Blockchain-Powered Medical Records
 
-**Frankly** is a blockchain-based Electronic Medical Record (EMR) system designed to meet the highest standards of **traceability**, **clinical usability**, and **patient sovereignty**.
+**Frankly EMR** refers to the original blockchain-powered electronic medical record architecture, documentation, and design system created and first published by **Frankie Aguinot, MD**, in 2025.
 
-This system was built with clinicians in mind — by a physician who understands that **time is your most precious resource**. Frankly is engineered so that your only task is to **open the portal**. From there, the system — powered by an **AI-based user interface (AI UI)** — guides you step by step like a digital physician assistant, surfacing the right labs, images, and prior data at just the right time.
+It was built as my personal oath to do no harm — made digital.
 
-Frankly is more than a tech demo. It's a compassionate, overbuilt, globally compliant platform — ready to change the way we document care.
+**Frankly EMR** is a blockchain-based Electronic Medical Record (EMR) system designed to meet the highest standards of **traceability**, **clinical usability**, and **patient sovereignty**.
+
+This system was built with clinicians in mind — by a physician who understands that **time is your most precious resource**. Frankly EMR is engineered so that your only task is to **open the portal**. From there, the system — powered by an **AI-based user interface (AI UI)** — guides you step by step like a digital physician assistant, surfacing the right labs, images, and prior data at just the right time.
+
+Frankly EMR is more than a tech demo. It's a compassionate, overbuilt, globally compliant platform — ready to change the way we document care.
 
 ---
 
@@ -59,10 +63,12 @@ Frankly is licensed under:
 **Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)**
 
 ### ✳️ Commercial Use Clause
-You **must request explicit written permission** for any commercial version that:
-- Charges patients for their own data
-- Obscures consent trails or auditability
-- Removes patient control from the design
+
+Any **commercial use** — including sale, licensing, monetization, or integration of **Frankly EMR** into paid systems — requires **explicit written permission** from the author.  
+This includes, but is not limited to, versions that:
+- Charge patients for their own data
+- Obscure consent trails or auditability
+- Remove patient control from the design
 
 We believe **ethical tech means accountable tech**.
 
@@ -90,6 +96,18 @@ The **gold standard** we strived for:
 ## 🧾 Attribution
 
 Built by [Frankie Aguinot, MD](https://www.linkedin.com/in/frankieaguinotmd/) —  physician, use-case strategist, and systems designer specializing in **digital sovereignty**, **ethical auditability**, and **compassionate technology**.
+
+---
+
+### 📰 Publication
+
+The design philosophy and ethical framework underlying **Frankly EMR** were first presented in the essay  
+*“I Designed a Blockchain EMR to Protect Patient Data. Then I Open-Sourced It.”* by **Frankie Aguinot, MD**.
+
+- 🌐 Read the original publication on Medium:  
+  [Designing a Blockchain EMR for Patient Data Ownership — Medium Article by Frankie Aguinot, MD](https://medium.com/@yourusername/i-designed-a-blockchain-emr-to-protect-patient-data-then-i-open-sourced-it-xxxxxxxxxxxx)  
+- 📄 Download the archived PDF version:  
+  [Frankly_EMR_Medium_Article_v2_Public_View.pdf](docs/Frankly_EMR_Medium_Article_v2_Public_View.pdf)
 
 ---
 
