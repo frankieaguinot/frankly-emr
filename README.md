@@ -2,13 +2,13 @@
 
 **Frankly EMR** refers to the original blockchain-powered electronic medical record architecture, documentation, and design system created and first published by **Frankie Aguinot, MD**, in 2025.
 
-It was built as my personal oath to do no harm — made digital.
+It was built as my personal oath to do no harm. Made digital.
 
 **Frankly EMR** is a blockchain-based Electronic Medical Record (EMR) system designed to meet the highest standards of **traceability**, **clinical usability**, and **patient sovereignty**.
 
-This system was built with clinicians in mind — by a physician who understands that **time is your most precious resource**. Frankly EMR is engineered so that your only task is to **open the portal**. From there, the system — powered by an **AI-based user interface (AI UI)** — guides you step by step like a digital physician assistant, surfacing the right labs, images, and prior data at just the right time.
+This system was built with clinicians in mind, by a physician who understands that **time is your most precious resource**. Frankly EMR is engineered so that your only task is to **open the portal**. From there, the system, powered by an **AI-based user interface (AI UI)**, guides you step by step like a digital physician assistant, surfacing the right labs, images, and prior data at just the right time.
 
-Frankly EMR is more than a tech demo. It's a compassionate, overbuilt, globally compliant platform — ready to change the way we document care.
+Frankly EMR is more than a tech demo. It's a compassionate, overbuilt, globally compliant platform, ready to change the way we document care.
 
 ---
 
@@ -17,9 +17,9 @@ Frankly EMR is more than a tech demo. It's a compassionate, overbuilt, globally 
 In the past, patients carried their medical charts. They owned them. Frankly EMR brings this vision into the 21st century:
 
 - **Immutable ledgers** track every access, change, and interaction.  
-- **Smart contracts** enforce consent — no silent access.  
+- **Smart contracts** enforce consent. No silent access.  
 - **Decentralized identifiers (DIDs)** and private key control replace hospital IDs.  
-- **Audit trails** can’t be edited, deleted, or hidden — ever.  
+- **Audit trails** can’t be edited, deleted, or hidden. Ever.  
 
 It’s **transparency by design**, not by policy.
 
@@ -27,7 +27,7 @@ It’s **transparency by design**, not by policy.
 
 ## 🔁 Lifecycle-Driven Architecture
 
-Frankly EMR is **not just an EMR** — it's an **end-to-end medical lifecycle tracker**. From **raw material** sourcing to **patient outcomes**, and even **excretion**, Frankly EMR tracks:
+Frankly EMR is **not just an EMR**, it's an **end-to-end medical lifecycle tracker**. From **raw material** sourcing to **patient outcomes**, and even **excretion**, Frankly EMR tracks:
 
 1. Raw Material Procurement  
 2. Manufacturing & Packaging  
@@ -37,9 +37,9 @@ Frankly EMR is **not just an EMR** — it's an **end-to-end medical lifecycle tr
 6. Patient Feedback  
 7. Waste, Excretion, and Disposal  
 
-Each step is **cryptographically hashed**. Each actor is **verified**. Each interaction is **consented and logged** — down to the **milligram**.
+Each step is **cryptographically hashed**. Each actor is **verified**. Each interaction is **consented and logged**, down to the **milligram**.
 
-> Frankly EMR isn’t just gold standard for documentation — it’s audit-grade compliance for the most sensitive treatments: controlled substances, antivirals, expensive biologics, and even nuclear medicine.
+> Frankly EMR isn’t just gold standard for documentation. It is audit-grade compliance for the most sensitive treatments: controlled substances, antivirals, expensive biologics, and even nuclear medicine.
 
 ---
 
@@ -50,7 +50,7 @@ Frankly EMR was built on four pillars:
 | Principle | What It Means |
 |----------|----------------|
 | **Consent-First Design** | Patients decide. Always. And they can revoke consent at any time. |
-| **AI-as-UI** | The interface is intelligent — it does the thinking so clinicians don’t have to. |
+| **AI-as-UI** | The interface is intelligent, it does the thinking so clinicians don’t have to. |
 | **Auditability by Default** | Every action leaves a permanent, verifiable footprint. |
 | **Digital Sovereignty** | Patients hold the keys. Not vendors. Not clinics. Not governments. |
 
@@ -58,7 +58,7 @@ Frankly EMR was built on four pillars:
 
 ## 🔒 Licensing & Use
 
-Frankly EMR is released under a Creative Commons Attribution–NonCommercial 4.0 International license (CC BY-NC 4.0).
+Frankly EMR is released under a Creative Commons Attribution-NonCommercial 4.0 International license (CC BY-NC 4.0).
 
 ## ✳️ Commercial Use Clause
 
@@ -80,11 +80,11 @@ We believe ethical tech means accountable tech, and that patient sovereignty sho
 
 ## 🧠 Designed for Busy Clinicians
 
-New systems often sit unused — too complex, too time-consuming. Frankly is different.
+New systems often sit unused. Too complex, too time-consuming. Frankly is different.
 
 The **gold standard** we strived for:  
 > **If you can click a link, you can use Frankly.**  
-> Everything else — consent, traceability, compliance — happens behind the scenes.
+> Everything else, consent, traceability, compliance, happens behind the scenes.
 
 ---
 
@@ -113,7 +113,7 @@ This verification section ensures full provenance of the Frankly EMR system’s 
 
 ## 🧾 Attribution
 
-Built by [Frankie Aguinot, MD](https://www.linkedin.com/in/frankieaguinotmd/) — physician, use-case strategist, and systems designer specializing in **digital sovereignty**, **ethical auditability**, and **compassionate technology**.
+Built by [Frankie Aguinot, MD](https://www.linkedin.com/in/frankieaguinotmd/), physician, use-case strategist, and systems designer specializing in **digital sovereignty**, **ethical auditability**, and **compassionate technology**.
 
 ---
 
@@ -133,3 +133,7 @@ The design philosophy and ethical framework underlying **Frankly EMR** were firs
 
 This work is licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/). © 2025 Frankie Aguinot, MD.  
 This repository, Frankly EMR, was originally conceived, authored, and published by Frankie Aguinot, MD. The source materials, including design architecture, smart contract specifications, and documentation, represent original intellectual property. This work is licensed under CC BY-NC 4.0 and may not be used for commercial purposes without explicit written consent from the author.
+
+---
+
+**Authored by Frankie Aguinot, MD**
