@@ -1,4 +1,5 @@
 // SPDX-License-Identifier: CC-BY-NC-4.0
+// © 2025 Frankie Aguinot, MD. All rights reserved.
 pragma solidity ^0.8.0;
 
 import "./00_actor-role-manager.sol";
