@@ -70,7 +70,10 @@ The best technology, like the best treatment, only works when it is understood a
 Usability is not convenience, it is compassion implemented through design.
 
 For the full design philosophy and ethical framework, see:  
-*Designing a Blockchain EMR for Patient Data Ownership, Medium article by Frankie Aguinot, MD*
+- 🌐 Read the original publication on Medium:  
+  [Designing a Blockchain EMR for Patient Data Ownership — Medium Article by Frankie Aguinot, MD](https://medium.com/@yourusername/i-designed-a-blockchain-emr-to-protect-patient-data-then-i-open-sourced-it-xxxxxxxxxxxx)  
+- 📄 Download the archived PDF version:  
+  [Frankly_EMR_Medium_Article_v2_Public_View.pdf](docs/Frankly_EMR_Medium_Article_v2_Public_View.pdf)
 
 ⸻
 
