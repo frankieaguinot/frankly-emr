@@ -2,7 +2,7 @@
 
 Frankly EMR is built to be **modular, extendable, and consent-first**.  
 While core roles like `Physician`, `Researcher`, and `Agency` are included out of the box,  
-**institutions may need to create custom roles** — like `HR`, `Billing`, `Legal`, or `Quality Assurance`.
+**institutions may need to create custom roles** such as `HR`, `Billing`, `Legal`, or `Quality Assurance`.
 
 This guide helps administrators design those roles *without compromising sovereignty, transparency, or ethical control*.
 
@@ -103,3 +103,7 @@ Before granting access to a new role, ask:
 
 Every custom role is a **proxy for trust**.  
 Design them like you would design a scalpel: sharp, useful — and absolutely safe in the right hands.
+
+--- 
+
+© 2025 Frankie Aguinot, MD. All rights reserved under CC BY-NC 4.0.
