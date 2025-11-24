@@ -1,4 +1,4 @@
-# Frankly EMR: A Gold Standard in Blockchain-Powered Medical Records
+<img width="368" height="599" alt="image" src="https://github.com/user-attachments/assets/398a994f-f92a-43f6-8746-c2c58134145b" /># Frankly EMR: A Gold Standard in Blockchain-Powered Medical Records
 
 **Frankly EMR** refers to the original blockchain-powered electronic medical record architecture, documentation, and design system created and first published by **Frankie Aguinot, MD**, in 2025.
 
@@ -58,19 +58,23 @@ Frankly EMR was built on four pillars:
 
 ## 🔒 Licensing & Use
 
-Frankly is licensed under:
+Frankly EMR is released under a Creative Commons Attribution–NonCommercial 4.0 International license (CC BY-NC 4.0).
 
-**Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)**
+## ✳️ Commercial Use Clause
 
-### ✳️ Commercial Use Clause
+Any form of commercial use, such as sale, licensing, monetization, or integration of Frankly EMR (in whole or in part) into any paid, revenue-generating, or proprietary system, requires explicit written permission from the author, Frankie Aguinot, MD.
 
-Any **commercial use** — including sale, licensing, monetization, or integration of **Frankly EMR** into paid systems — requires **explicit written permission** from the author.  
-This includes, but is not limited to, versions that:  
-- Charge patients for their own data  
-- Obscure consent trails or auditability  
-- Remove patient control from the design  
+Commercial use includes, but is not limited to:
 
-We believe **ethical tech means accountable tech**.
+- Paywalls or subscription models for access to personal health data
+- Use within proprietary or audit-opaque infrastructures
+- Any revenue-generating implementations, services, or derivatives based on Frankly EMR
+
+No part of this system may be used for profit or commercial gain without prior written consent from the author.
+
+This clause is consistent across all project documentation, repository files, and timestamped Proof of Origin records.
+
+We believe ethical tech means accountable tech, and that patient sovereignty should never be for sale.
 
 ---
 
