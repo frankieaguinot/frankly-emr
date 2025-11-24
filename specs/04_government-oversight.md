@@ -61,3 +61,7 @@ No invisible logs. No secret audits. Just accountable oversight — by design.
 - `contracts/04_government-oversight.sol` – Solidity source
 - `contracts/01_patient-consent-registry.sol` – Consent verification
 - `contracts/00_actor-role-manager.sol` – Role enforcement
+
+--- 
+
+© 2025 Frankie Aguinot, MD. All rights reserved under CC BY-NC 4.0.
