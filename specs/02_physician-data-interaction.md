@@ -73,3 +73,7 @@ This is like a **digital sign-in sheet on a patient’s folder**:
 - `contracts/01_patient-consent-registry.sol` – Consent logic
 - `contracts/00_actor-role-manager.sol` – Role assignment and permissions
 - `specs/data-schema.md` – ScopeHash construction and ID model
+
+--- 
+
+- © 2025 Frankie Aguinot, MD. All rights reserved under CC BY-NC 4.0.
