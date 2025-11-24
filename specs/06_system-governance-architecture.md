@@ -91,5 +91,9 @@ Contracts do not store raw data — only hashed consent metadata and logs.
 
 ## 🧠 Final Thought
 
-Frankly doesn’t just store health records — it **encodes accountability**.  
+Frankly EMR doesn’t just store health records — it **encodes accountability**.  
 Every action is a signature. Every access is a story. Every permission is earned, not assumed.
+
+--- 
+
+© 2025 Frankie Aguinot, MD. All rights reserved under CC BY-NC 4.0.
