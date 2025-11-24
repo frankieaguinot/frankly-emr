@@ -136,4 +136,4 @@ This repository, Frankly EMR, was originally conceived, authored, and published 
 
 ---
 
-**Authored by Frankie Aguinot, MD**
+© 2025 Frankie Aguinot, MD. All rights reserved under CC BY-NC 4.0.
