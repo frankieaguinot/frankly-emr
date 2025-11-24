@@ -1,17 +1,17 @@
 # 00_project-overview.md
 
-# Frankly EMR – Project Overview
+# Frankly EMR - Project Overview
 
 **Frankly EMR** is a blockchain-powered medical record and traceability platform designed to be the **gold standard** in patient data control, lifecycle accountability, and clinical usability.
 
-It was built by a physician for clinicians, researchers, developers — and the governments that must regulate it all.
+It was built by a physician for clinicians, researchers, developers, and the governments that must regulate it all.
 
 ---
 
 ## 🧠 Why Frankly EMR?
 
 At its core, **Frankly EMR** asks:  
-**"What would an EMR look like if we designed it to be ethical, patient-first, and globally accountable — from day one?"**
+**"What would an EMR look like if we designed it to be ethical, patient-first, and globally accountable, from day one?"**
 
 The answer is:
 - Patient-owned health data  
@@ -19,7 +19,7 @@ The answer is:
 - Real-time traceability of every pill, log, or scan  
 - Smart contracts that enforce permissions, not just record them  
 
-Each of these principles forms part of **Frankly EMR’s original architecture**, as documented and timestamped in its public release under **Creative Commons Attribution–NonCommercial 4.0 (CC BY-NC 4.0)**.
+Each of these principles forms part of **Frankly EMR’s original architecture**, as documented and timestamped in its public release under **Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC 4.0)**.
 
 ---
 
@@ -44,7 +44,7 @@ All user interactions are governed by **immutable, consent-based smart contracts
 
 ## 📦 What Makes It Different?
 
-**Frankly EMR** wasn’t just built to chart data — it was built to **track and prove what happened**. It accounts for:
+**Frankly EMR** wasn’t just built to chart data. It was built to **track and prove what happened**. It accounts for:
 
 - Who accessed what data  
 - With what consent  
@@ -69,7 +69,7 @@ These protections apply across all implementations and derivatives of **Frankly 
 6. Medication leftover tracking  
 7. Downstream excretion (when needed)  
 
-It can even **reconcile doses** based on dispensing, clinical use, and timing — ensuring that **every mg is accounted for**.
+It can even **reconcile doses** based on dispensing, clinical use, and timing, ensuring that **every mg is accounted for**.
 
 This gives regulators, clinical researchers, and governments a **verifiable trail** from **origin to outcome**.
 
@@ -92,9 +92,9 @@ All users interact under a unified ethical model emphasizing *accountability, co
 
 ## 🔐 Licensing
 
-**Frankly EMR** is released under a **Creative Commons Attribution–NonCommercial 4.0 International license (CC BY-NC 4.0)**.
+**Frankly EMR** is released under a **Creative Commons Attribution-NonCommercial 4.0 International license (CC BY-NC 4.0)**.
 
-Any form of **commercial use** — such as **sale, licensing, monetization, or integration of Frankly EMR** (in whole or in part) into any paid, revenue-generating, or proprietary system — requires **explicit written permission** from the author, **Frankie Aguinot, MD**.
+Any form of **commercial use**, such as **sale, licensing, monetization, or integration of Frankly EMR** (in whole or in part) into any paid, revenue-generating, or proprietary system, requires **explicit written permission** from the author, **Frankie Aguinot, MD**.
 
 Commercial use includes, but is not limited to:
 - Paywalls or subscription models for access to personal health data  
@@ -105,20 +105,20 @@ Commercial use includes, but is not limited to:
 
 This clause is consistent across all project documentation, repository files, and timestamped Proof of Origin records.
 
-We believe in protecting patients — from corporations *and* from opacity.
+We believe in protecting patients, from corporations *and* from opacity.
 
 ---
 
 ## 🧾 Final Word
 
-**Frankly EMR** isn't just a medical record —  
+**Frankly EMR** isn't just a medical record.  
 It's a **design philosophy for compassionate systems**.
 
 - Overbuilt for resilience  
 - Transparent by default  
-- Usable by everyone — from village clinic to national agency  
+- Usable by everyone, from village clinic to national agency  
 
-It proves that ethics, usability, and accountability are **not trade-offs** — they're the **gold standard** we should all strive for.
+It proves that ethics, usability, and accountability are **not trade-offs**. They are the **gold standard** we should all strive for.
 
 This document serves as both a technical and ethical declaration of authorship and design intent.  
 For proof of authorship, timestamp validation, and publication record, see:  
