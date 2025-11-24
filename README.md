@@ -14,12 +14,12 @@ Frankly EMR is more than a tech demo. It's a compassionate, overbuilt, globally 
 
 ## 🧠 Core Vision
 
-In the past, patients carried their medical charts. They owned them. Frankly brings this vision into the 21st century:
+In the past, patients carried their medical charts. They owned them. Frankly EMR brings this vision into the 21st century:
 
-- **Immutable ledgers** track every access, change, and interaction.
-- **Smart contracts** enforce consent — no silent access.
-- **Decentralized identifiers (DIDs)** and private key control replace hospital IDs.
-- **Audit trails** can’t be edited, deleted, or hidden — ever.
+- **Immutable ledgers** track every access, change, and interaction.  
+- **Smart contracts** enforce consent — no silent access.  
+- **Decentralized identifiers (DIDs)** and private key control replace hospital IDs.  
+- **Audit trails** can’t be edited, deleted, or hidden — ever.  
 
 It’s **transparency by design**, not by policy.
 
@@ -27,25 +27,25 @@ It’s **transparency by design**, not by policy.
 
 ## 🔁 Lifecycle-Driven Architecture
 
-Frankly is **not just an EMR** — it's an **end-to-end medical lifecycle tracker**. From **raw material** sourcing to **patient outcomes**, and even **excretion**, Frankly tracks:
+Frankly EMR is **not just an EMR** — it's an **end-to-end medical lifecycle tracker**. From **raw material** sourcing to **patient outcomes**, and even **excretion**, Frankly EMR tracks:
 
-1. Raw Material Procurement
-2. Manufacturing & Packaging
-3. Shipping & Cold Chain Handoffs
-4. Prescription Dispensation
-5. Clinical Use, Monitoring & Labs
-6. Patient Feedback
-7. Waste, Excretion, and Disposal
+1. Raw Material Procurement  
+2. Manufacturing & Packaging  
+3. Shipping & Cold Chain Handoffs  
+4. Prescription Dispensation  
+5. Clinical Use, Monitoring & Labs  
+6. Patient Feedback  
+7. Waste, Excretion, and Disposal  
 
 Each step is **cryptographically hashed**. Each actor is **verified**. Each interaction is **consented and logged** — down to the **milligram**.
 
-> Frankly isn’t just gold standard for documentation — it’s audit-grade compliance for the most sensitive treatments: controlled substances, antivirals, expensive biologics, and even nuclear medicine.
+> Frankly EMR isn’t just gold standard for documentation — it’s audit-grade compliance for the most sensitive treatments: controlled substances, antivirals, expensive biologics, and even nuclear medicine.
 
 ---
 
 ## 💡 Human-Centered, Tech-Backed
 
-Frankly was built on four pillars:
+Frankly EMR was built on four pillars:
 
 | Principle | What It Means |
 |----------|----------------|
@@ -65,10 +65,10 @@ Frankly is licensed under:
 ### ✳️ Commercial Use Clause
 
 Any **commercial use** — including sale, licensing, monetization, or integration of **Frankly EMR** into paid systems — requires **explicit written permission** from the author.  
-This includes, but is not limited to, versions that:
-- Charge patients for their own data
-- Obscure consent trails or auditability
-- Remove patient control from the design
+This includes, but is not limited to, versions that:  
+- Charge patients for their own data  
+- Obscure consent trails or auditability  
+- Remove patient control from the design  
 
 We believe **ethical tech means accountable tech**.
 
@@ -86,16 +86,30 @@ The **gold standard** we strived for:
 
 ## 📂 Repo Structure
 
-- `/contracts` – Smart contract code (Solidity)
-- `/specs` – Consent flows, role logic, lifecycle tracking, permission guides
-- `/docs` – Technical architecture and clinician-facing overviews
-- `/mockups` – UI/UX prototypes
+- `/contracts` – Smart contract code (Solidity)  
+- `/specs` – Consent flows, role logic, lifecycle tracking, permission guides  
+- `/docs` – Technical architecture, provenance records, and clinician-facing overviews  
+- `/mockups` – UI/UX prototypes  
+
+---
+
+## 🧾 Verification & Provenance
+
+This repository includes timestamped proof of authorship and publication for the Frankly EMR project.
+
+- **Medium Article:** [Frankly_EMR_Medium_Article_v2_Public_View.pdf](docs/Frankly_EMR_Medium_Article_v2_Public_View.pdf)  
+- **OTS Proof of Origin:** [Frankly_EMR_Medium_Article_v2_Public_View.pdf.ots](docs/Frankly_EMR_Medium_Article_v2_Public_View.pdf.ots)  
+- **Verification Guide:** [verification-and-provenance.md](docs/verification-and-provenance.md)  
+
+Each file provides verifiable evidence of authorship using OpenTimestamps (OTS), anchoring the original publication to the Bitcoin blockchain for proof of creation and release integrity.
+
+This verification section ensures full provenance of the Frankly EMR system’s origin, authorship, and public disclosure, linking the written documentation, timestamp receipt, and verification method in a transparent, auditable record.
 
 ---
 
 ## 🧾 Attribution
 
-Built by [Frankie Aguinot, MD](https://www.linkedin.com/in/frankieaguinotmd/) —  physician, use-case strategist, and systems designer specializing in **digital sovereignty**, **ethical auditability**, and **compassionate technology**.
+Built by [Frankie Aguinot, MD](https://www.linkedin.com/in/frankieaguinotmd/) — physician, use-case strategist, and systems designer specializing in **digital sovereignty**, **ethical auditability**, and **compassionate technology**.
 
 ---
 
@@ -114,4 +128,4 @@ The design philosophy and ethical framework underlying **Frankly EMR** were firs
 ## 🔗 License
 
 This work is licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/). © 2025 Frankie Aguinot, MD.  
-This repository, Frankly EMR, was originally conceived, authored, and published by Frankie Aguinot, MD.  The source materials, including design architecture, smart contract specifications, and documentation, represent original intellectual property.  This work is licensed under CC BY-NC 4.0 and may not be used for commercial purposes without explicit written consent from the author.
+This repository, Frankly EMR, was originally conceived, authored, and published by Frankie Aguinot, MD. The source materials, including design architecture, smart contract specifications, and documentation, represent original intellectual property. This work is licensed under CC BY-NC 4.0 and may not be used for commercial purposes without explicit written consent from the author.
