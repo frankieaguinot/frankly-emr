@@ -56,21 +56,26 @@ Frankly EMR tracks the **entire lifecycle of high-scrutiny medications and clini
 
 ```plaintext
 [Raw Material Procurement]
-        |
-        v
+|
+v
 [Manufacturing & Packaging]
-        |
-        v
+|
+v
 [Supply Chain & Shipping]
-        |
-        v
+|
+v
 [Prescription & Dispensation]
-        |
-        v
+|
+v
 [Clinical Use & Monitoring]
-        |
-        v
+|
+v
 [Excretion & Downstream Monitoring]
-        |
-        v
+|
+v
 [Oversight / AI Alerts / Audits]
+```
+
+---
+
+© 2025 Frankie Aguinot, MD. All rights reserved under CC BY-NC 4.0.
