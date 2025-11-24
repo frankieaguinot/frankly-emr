@@ -1,5 +1,3 @@
-<img width="368" height="599" alt="image" src="https://github.com/user-attachments/assets/398a994f-f92a-43f6-8746-c2c58134145b" /># Frankly EMR: A Gold Standard in Blockchain-Powered Medical Records
-
 **Frankly EMR** refers to the original blockchain-powered electronic medical record architecture, documentation, and design system created and first published by **Frankie Aguinot, MD**, in 2025.
 
 It was built as my personal oath to do no harm — made digital.
