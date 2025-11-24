@@ -129,10 +129,30 @@ The design philosophy and ethical framework underlying **Frankly EMR** were firs
 
 ---
 
-## 🔗 License
+# 🧩 Version & Provenance
 
-This work is licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/). © 2025 Frankie Aguinot, MD.  
-This repository, Frankly EMR, was originally conceived, authored, and published by Frankie Aguinot, MD. The source materials, including design architecture, smart contract specifications, and documentation, represent original intellectual property. This work is licensed under CC BY-NC 4.0 and may not be used for commercial purposes without explicit written consent from the author.
+This repository reflects version **v1.1.1**. Licensing and Provenance Refinement Update.
+
+All documentation, specifications, and source materials in this version are timestamped for authorship continuity.
+Verification records (including blockchain OpenTimestamps proofs and the archived Medium publication PDF) are available in the `/docs/` directory.
+
+⸻
+
+## 📜 License
+
+**Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)**
+
+Any form of commercial use, such as sale, licensing, monetization, or integration of Frankly EMR (in whole or in part) into any paid, revenue-generating, or proprietary system, requires explicit written permission from the author, **Frankie Aguinot, MD**.
+
+Commercial use includes, but is not limited to:
+
+- Paywalls or subscription models for access to personal health data  
+- Use within proprietary or audit-opaque infrastructures  
+- Any revenue-generating implementations, services, or derivatives based on Frankly EMR  
+
+No part of this system may be used for profit or commercial gain without prior written consent from the author.
+
+This clause applies uniformly across all project documentation and repository files.
 
 ---
 
