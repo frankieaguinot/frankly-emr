@@ -76,4 +76,4 @@ This is like a **digital sign-in sheet on a patient’s folder**:
 
 --- 
 
-- © 2025 Frankie Aguinot, MD. All rights reserved under CC BY-NC 4.0.
+© 2025 Frankie Aguinot, MD. All rights reserved under CC BY-NC 4.0.
