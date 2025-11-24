@@ -1,6 +1,6 @@
 # Core System Architecture – Frankly EMR
 
-This document outlines the **technical backbone** of Frankly — a blockchain-based electronic medical records (EMR) system designed for traceability, consent architecture, and global patient sovereignty.
+This document outlines the **technical backbone** of Frankly EMR — a blockchain-based electronic medical records (EMR) system designed for traceability, consent architecture, and global patient sovereignty.
 
 ---
 
@@ -61,7 +61,7 @@ Consent scope itself is hashed, allowing on-chain validation without exposing ra
 
 ## 📤 Exportable Architecture
 
-Frankly was intentionally **overbuilt** to support multiple use cases:
+Frankly EMR was intentionally **overbuilt** to support multiple use cases:
 
 - **Decentralized national EMR system**
 - **Pharma-to-patient compliance tracking**
@@ -79,3 +79,7 @@ The repo is modular — adopters can strip it down to fit small clinics or scale
 - **Pharmacy stock chain**
 - **Genomic database**
 - **Telemedicine**
+
+---
+
+© 2025 Frankie Aguinot, MD. All rights reserved under CC BY-NC 4.0.
