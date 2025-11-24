@@ -53,3 +53,7 @@ for a **specific box of records**, and every request is logged in permanent ink.
 - `contracts/03_researcher-data-usage.sol` – Solidity source
 - `contracts/01_patient-consent-registry.sol` – Consent logic
 - `contracts/00_actor-role-manager.sol` – Role assignment and permissions
+
+--- 
+
+© 2025 Frankie Aguinot, MD. All rights reserved under CC BY-NC 4.0.
