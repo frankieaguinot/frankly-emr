@@ -6,7 +6,7 @@ Frankly EMR is a consent-first, blockchain-backed medical record system built fo
 
 This document is for developers, architects, and digital health engineers who want to understand the why and how behind the system, and perhaps extend it to new use cases.
 
-⸻
+---
 
 ## 🔐 Core Design Philosophy
 
@@ -18,7 +18,7 @@ This document is for developers, architects, and digital health engineers who wa
 | **Hybrid Architecture** | On-chain consent meets off-chain data (IPFS, encrypted stores, etc.). |
 | **Clinical Realism** | Designed with the full care loop in mind, not just hospitals, but supply chains, labs, researchers, and regulators. |
 
-⸻
+---
 
 ## 🧱 Smart Contract Stack
 
@@ -41,7 +41,7 @@ Frankly EMR is divided into modular Solidity contracts, each performing a specif
 
 Each emits hashed, timestamped logs and leverages `scopeHash` structures to enforce verifiable, cryptographic trust.
 
-⸻
+---
 
 ## 🤖 AI as the User Interface
 
@@ -55,7 +55,7 @@ A clinician opens a link, and the AI guides them step by step, verifying credent
 This is more than an interface.  
 It is an intelligent assistant designed to think around the physician, not for them.
 
-⸻
+---
 
 ## 💊 Why Usability Is a Moral Obligation
 
@@ -75,6 +75,9 @@ For the full design philosophy and ethical framework, see:
 - 📄 Download the archived PDF version:  
   [Frankly_EMR_Medium_Article_v2_Public_View.pdf](docs/Frankly_EMR_Medium_Article_v2_Public_View.pdf)
 
-⸻
+---
 
-© 2025 Frankie Aguinot, MD. All rights reserved under CC BY-NC 4.0.
+© 2025 Francheska Aguinot (pseudonym: Frankie Aguinot)  
+Frankly EMR Proof Folder — Version 1.1  
+U.S. Copyright Office Case #1-15046837951  
+Licensed under Creative Commons BY-NC 4.0.
