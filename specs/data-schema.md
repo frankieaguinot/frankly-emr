@@ -2,7 +2,7 @@
 
 Frankly EMR is built on standardized, interoperable medical data to ensure global compatibility, ease of analysis, and uncompromising patient sovereignty.
 
-⸻
+---
 
 ## 🧬 Core Format: FHIR
 
@@ -16,7 +16,7 @@ Every patient event, from a vital sign to a diagnostic image, is stored as a dis
 - 🔗 Compatible with blockchain-based metadata hashing  
 - 📥 Cleanly exportable to external systems or clinical research platforms  
 
-⸻
+---
 
 ## 🔑 Blockchain-Mapped Fields
 
@@ -40,7 +40,7 @@ This design ensures that:
 To preserve intellectual property integrity and data protection compliance, the structure and schema mappings of Frankly EMR are covered under the CC BY-NC 4.0 license.  
 Unauthorized reproduction or modification of these specifications for commercial or proprietary purposes is strictly prohibited without explicit written consent from Frankie Aguinot, MD.
 
-⸻
+---
 
 ## 🧠 Example: Observation Resource
 
@@ -64,4 +64,7 @@ Unauthorized reproduction or modification of these specifications for commercial
 
 ---
 
-© 2025 Frankie Aguinot, MD. All rights reserved under CC BY-NC 4.0.
+© 2025 Francheska Aguinot (pseudonym: Frankie Aguinot)  
+Frankly EMR Proof Folder — Version 1.1  
+U.S. Copyright Office Case #1-15046837951  
+Licensed under Creative Commons BY-NC 4.0.
