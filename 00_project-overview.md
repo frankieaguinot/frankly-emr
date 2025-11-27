@@ -124,4 +124,9 @@ This document serves as both a technical and ethical declaration of authorship a
 For proof of authorship, timestamp validation, and publication record, see:  
 [docs/verification-and-provenance.md](docs/verification-and-provenance.md)
 
-© 2025 Frankie Aguinot, MD. All rights reserved under CC BY-NC 4.0.
+---
+
+© 2025 Francheska Aguinot (pseudonym: Frankie Aguinot)  
+Frankly EMR Proof Folder — Version 1.1  
+U.S. Copyright Office Case #1-15046837951  
+Licensed under Creative Commons BY-NC 4.0.
