@@ -8,7 +8,7 @@ We know what it’s like. New tech arrives, and suddenly you need a three-hour t
 
 Frankly EMR was designed to be different.
 
-⸻
+---
 
 ## 🧠 A UI That Thinks Like a Physician Assistant (PA)
 
@@ -27,7 +27,7 @@ That all a clinician should need to do is open the portal, and the system takes 
 
 No hunting. No toggling. No remembering where something lives.
 
-⸻
+---
 
 ## ⏱️ Zero-Training Learning Curve
 
@@ -40,7 +40,7 @@ No steep learning curve. No extra clicks. No IT ticket required.
 
 It disappears into your clinical flow, like a great nurse who knows what you need before you ask.
 
-⸻
+---
 
 ## 👩‍⚕️ Designed for Every Kind of Clinician
 
@@ -48,7 +48,7 @@ Physicians. Nurses. Pharmacists. Midwives. Researchers. Health officers.
 
 Frankly EMR enforces consent-first access, meaning each role sees only what’s granted, but the system adapts to a wide range of real-world care responsibilities.
 
-⸻
+---
 
 ## 💡 Why This Matters
 
@@ -59,4 +59,7 @@ Because great tech shouldn’t demand more of us. It should make it easier to do
 
 ---
 
-© 2025 Frankie Aguinot, MD. All rights reserved under CC BY-NC 4.0.
+© 2025 Francheska Aguinot (pseudonym: Frankie Aguinot)  
+Frankly EMR Proof Folder — Version 1.1  
+U.S. Copyright Office Case #1-15046837951  
+Licensed under Creative Commons BY-NC 4.0.
