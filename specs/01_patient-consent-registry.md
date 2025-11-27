@@ -8,7 +8,7 @@ Patients explicitly decide which providers can access their records. Consent is:
 - Auditable: every action is hashed and logged  
 - Scope-limited: tied to specific use cases via hashed descriptors  
 
-⸻
+---
 
 ## 🧠 What This Contract Handles
 
@@ -20,7 +20,7 @@ Patients explicitly decide which providers can access their records. Consent is:
 
 This allows fine-grained control without exposing raw data, aligning with zero-trust principles and real-world flexibility.
 
-⸻
+---
 
 ## 🔐 Consent Flow
 
@@ -35,7 +35,7 @@ This allows fine-grained control without exposing raw data, aligning with zero-t
    - Consent is still valid  
 6. Patient may revoke consent anytime, instantly cutting access.  
 
-⸻
+---
 
 ## 🌐 Decentralized Consent Control
 
@@ -50,7 +50,7 @@ This makes consent:
 
 This is particularly important in regions where doctors practice at multiple hospitals, such as the Philippines, ensuring providers do not lose access due to institutional silos.
 
-⸻
+---
 
 ## 📦 Function Reference
 
@@ -63,7 +63,7 @@ This is particularly important in regions where doctors practice at multiple hos
 
 All actions emit corresponding events for **on-chain logging and audit integrity**.
 
-⸻
+---
 
 ## 🧱 Real-World Analogy
 
@@ -73,7 +73,7 @@ This is like a digital permission slip folder:
 - They sign, date, and optionally attach supporting notes  
 - If they tear up a slip, access is revoked, but the original entry is still on record  
 
-⸻
+---
 
 ## 🗃 Related Files
 
@@ -81,7 +81,7 @@ This is like a digital permission slip folder:
 - `contracts/00_actor-role-manager.sol` - Role management and registration  
 - `specs/data-schema.md` - DID-based identity, hashed field structures  
 
-⸻
+---
 
 © 2025 Francheska Aguinot (pseudonym: Frankie Aguinot)  
 Frankly EMR Proof Folder — Version 1.1  
