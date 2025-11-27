@@ -104,6 +104,9 @@ Before granting access to a new role, ask:
 Every custom role is a **proxy for trust**.  
 Design them like you would design a scalpel: sharp, useful — and absolutely safe in the right hands.
 
---- 
+---
 
-© 2025 Frankie Aguinot, MD. All rights reserved under CC BY-NC 4.0.
+© 2025 Francheska Aguinot (pseudonym: Frankie Aguinot)  
+Frankly EMR Proof Folder — Version 1.1  
+U.S. Copyright Office Case #1-15046837951  
+Licensed under Creative Commons BY-NC 4.0.
