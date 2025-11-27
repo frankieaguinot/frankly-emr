@@ -81,7 +81,7 @@ Frankly EMR enables unified access regardless of institution, with patients main
 - `contracts/01_patient-consent-registry.sol` - Consent logic built atop roles  
 - `data-schema.md` - Field structure, hashing, and DID usage  
 
-⸻
+---
 
 © 2025 Francheska Aguinot (pseudonym: Frankie Aguinot)  
 Frankly EMR Proof Folder — Version 1.1  
