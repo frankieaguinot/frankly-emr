@@ -4,7 +4,7 @@ This smart contract governs role-based access control for Frankly EMR.
 
 It is the gatekeeper, ensuring that only authorized parties can view, modify, or interact with patient-linked data. Every permission event is transparently logged on-chain for auditability and traceability.
 
-⸻
+---
 
 ## 🔐 Purpose
 
@@ -17,7 +17,7 @@ The Actor Role Manager contract allows us to:
 
 This design is decentralized but verifiable, maintaining patient sovereignty while supporting real-world oversight.
 
-⸻
+---
 
 ## 🧠 Why This Matters
 
@@ -35,7 +35,7 @@ This means:
 - A patient can receive care from multiple clinics without fragmented records  
 - Roles are defined by relationship, not employment  
 
-⸻
+---
 
 ## 🧱 Key Functions
 
@@ -49,7 +49,7 @@ This means:
 
 Each action emits an event that is immortalized via blockchain hash, forming the audit trail for access control.
 
-⸻
+---
 
 ## 🧱 Real-World Analogy
 
@@ -58,7 +58,7 @@ Hospitals do not just let anyone into the ICU. Access is granted based on roles,
 
 Frankly EMR simply makes the keycards digital, cryptographic, and globally portable.
 
-⸻
+---
 
 ## 🌐 Identity Across Institutions
 
@@ -73,7 +73,7 @@ This reflects real-world environments like the Philippines, where:
 
 Frankly EMR enables unified access regardless of institution, with patients maintaining full oversight.
 
-⸻
+---
 
 ## 📦 Related Files
 
