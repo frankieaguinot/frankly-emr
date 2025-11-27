@@ -72,8 +72,10 @@ This is like a **digital sign-in sheet on a patient’s folder**:
 - `contracts/02_physician-data-interaction.sol` – Solidity source
 - `contracts/01_patient-consent-registry.sol` – Consent logic
 - `contracts/00_actor-role-manager.sol` – Role assignment and permissions
-- `specs/data-schema.md` – ScopeHash construction and ID model
+- `specs/data-schema.md` – ScopeHash construction and ID model 
 
---- 
-
-© 2025 Frankie Aguinot, MD. All rights reserved under CC BY-NC 4.0.
+---
+© 2025 Francheska Aguinot (pseudonym: Frankie Aguinot)  
+Frankly EMR Proof Folder — Version 1.1  
+U.S. Copyright Office Case #1-15046837951  
+Licensed under Creative Commons BY-NC 4.0.
