@@ -83,4 +83,7 @@ This is like a digital permission slip folder:
 
 ⸻
 
-© 2025 Frankie Aguinot, MD. All rights reserved under CC BY-NC 4.0.
+© 2025 Francheska Aguinot (pseudonym: Frankie Aguinot)  
+Frankly EMR Proof Folder — Version 1.1  
+U.S. Copyright Office Case #1-15046837951  
+Licensed under Creative Commons BY-NC 4.0.
