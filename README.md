@@ -136,7 +136,7 @@ This repository reflects version **v1.1.1**. Licensing and Provenance Refinement
 All documentation, specifications, and source materials in this version are timestamped for authorship continuity.
 Verification records (including blockchain OpenTimestamps proofs and the archived Medium publication PDF) are available in the `/docs/` directory.
 
-⸻
+---
 
 ## 📜 License
 
@@ -156,7 +156,6 @@ This clause applies uniformly across all project documentation and repository fi
 
 ---
 
----
 © 2025 Francheska Aguinot (pseudonym: Frankie Aguinot)  
 Frankly EMR Proof Folder — Version 1.1  
 U.S. Copyright Office Case #1-15046837951  
